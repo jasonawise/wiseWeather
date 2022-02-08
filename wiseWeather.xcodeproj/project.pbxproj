@@ -13,6 +13,8 @@
 		2C4F36AA27B15BDA000C65D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F369827B15BD9000C65D9 /* ContentView.swift */; };
 		2C4F36AB27B15BDA000C65D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F369927B15BDA000C65D9 /* Assets.xcassets */; };
 		2C4F36AC27B15BDA000C65D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F369927B15BDA000C65D9 /* Assets.xcassets */; };
+		2C70FA2127B1CA1F00ADCBBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C70FA2027B1CA1F00ADCBBE /* Model.swift */; };
+		2C70FA2227B1CA1F00ADCBBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C70FA2027B1CA1F00ADCBBE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2C4F369E27B15BDA000C65D9 /* wiseWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wiseWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4F36A427B15BDA000C65D9 /* wiseWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wiseWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4F36A627B15BDA000C65D9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2C6369E427B1CEF800BDCC3A /* wiseWeather--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "wiseWeather--iOS--Info.plist"; sourceTree = "<group>"; };
+		2C70FA2027B1CA1F00ADCBBE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 		2C4F369127B15BD9000C65D9 = {
 			isa = PBXGroup;
 			children = (
+				2C6369E427B1CEF800BDCC3A /* wiseWeather--iOS--Info.plist */,
 				2C4F369627B15BD9000C65D9 /* Shared */,
 				2C4F36A527B15BDA000C65D9 /* macOS */,
 				2C4F369F27B15BDA000C65D9 /* Products */,
@@ -56,6 +61,7 @@
 			children = (
 				2C4F369727B15BD9000C65D9 /* wiseWeatherApp.swift */,
 				2C4F369827B15BD9000C65D9 /* ContentView.swift */,
+				2C70FA2027B1CA1F00ADCBBE /* Model.swift */,
 				2C4F369927B15BDA000C65D9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C70FA2127B1CA1F00ADCBBE /* Model.swift in Sources */,
 				2C4F36A927B15BDA000C65D9 /* ContentView.swift in Sources */,
 				2C4F36A727B15BDA000C65D9 /* wiseWeatherApp.swift in Sources */,
 			);
@@ -185,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C70FA2227B1CA1F00ADCBBE /* Model.swift in Sources */,
 				2C4F36AA27B15BDA000C65D9 /* ContentView.swift in Sources */,
 				2C4F36A827B15BDA000C65D9 /* wiseWeatherApp.swift in Sources */,
 			);
@@ -313,7 +321,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S5Q7Y53B5L;
 				ENABLE_PREVIEWS = YES;
+				EXPECTION_DOMAINS = "";
+				"EXPECTION_DOMAINS[arch=*]" = "http://api.openweathermap.org";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "wiseWeather--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,6 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jasonawise.wiseWeather;
 				PRODUCT_NAME = wiseWeather;
 				SDKROOT = iphoneos;
@@ -343,7 +355,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S5Q7Y53B5L;
 				ENABLE_PREVIEWS = YES;
+				EXPECTION_DOMAINS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "wiseWeather--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jasonawise.wiseWeather;
 				PRODUCT_NAME = wiseWeather;
 				SDKROOT = iphoneos;
